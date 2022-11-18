@@ -20,9 +20,9 @@ public class ProductTest {
     @Test
     public void checkProductPrice() {
         // I am making this test to fail
-        double expectedPrice = 180.0;
+        double expectedPrice = 180;
         Product aProduct = new Product("1", "DELL MONITOR", 180);
-        assertEquals("Check the price of the product", expectedPrice, aProduct.getPrice());
+        assertEquals("Check the price of the product", expectedPrice, aProduct.getPrice(), 0.0001);
     }
 
 }
